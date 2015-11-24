@@ -2,7 +2,7 @@
 var myApp = angular.module('myApp', ['ui.router'])
 
 var myCtrl = myApp.controller('myCtrl', function($scope, $http) {
-	
+var data;	
 })
 
 // 'home' references ui-sref	
@@ -10,14 +10,14 @@ var myCtrl = myApp.controller('myCtrl', function($scope, $http) {
 myApp.config(function($stateProvider){
 	$stateProvider
 		.state ('home', {
-			url: '/',
+			url: '',
 			templateUrl: 'template/home.html',
 			controller: 'homeController',
 		})
 
 		.state ('projects', {
 			url: '/projects',
-			templateUrl: 'template/projects.html',
+			templateUrl: 'template/project.html',
 			controller: 'projectsController',
 		})
 
@@ -32,36 +32,25 @@ myApp.config(function($stateProvider){
 
 //each page gets its own controller
 myApp.controller('homeController', function($scope, $http){
-  $scope.info = "Some info";
+  
 })
 
 
 
 //each page gets its own controller
 myApp.controller('projectsController', function($scope, $http){
-  $scope.info = "some info";
-  // var getData = function(map) {
+  	
+  	var getData = function() {
+	$http.get('../data/info.json').success(function(response){
+	$scope.items = response;
+	console.log(response);
 
-    
-  // var data;
-  // $.ajax({
-  //      url:'data/response.json',
-  //      type: "get",
-  //      success:function(dat) {
-  //        data = dat
-  //         customBuild(map,data);
-         
-  //      }, 
-  //      dataType:"json"
-  // })
-    
-
-  // }
 })
-
-
+}
+getData()
+});
 
 //each page gets its own controller
 myApp.controller('interestsController', function($scope, $http){
-  $scope.info = "Some info";
+  
 })

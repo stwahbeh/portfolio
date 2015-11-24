@@ -54,3 +54,9 @@ a:hover{
 	text-align:center;
 	font-size: 10em;
 }
+
+#photo {
+float:left;
+padding:1em;
+
+}

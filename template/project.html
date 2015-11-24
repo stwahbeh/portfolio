@@ -1,16 +1,16 @@
-<div class="container">
+
 <div class='container'>
   <h1 class="titles">Projects</h1>
 </div>
 <div class="container">
 	<div class="row">
-		<div ng-repeat"" class="col-md-4" title="" ng-click="">
-			<h2>{{.Title}}</h2>
-			<p>{{.Description}}</p>
-			<p id="languages">{{.LanguagesUsed}}</p>
-			<p id="Libraries">{{.LibrariesUsed}}</p>
+		<div ng-repeat="item in items" class="col-md-4" title="" ng-click="">
+			<h2>{{item.Title}}</h2>
+			<p>{{item.Description}}</p>
+			<p id="languages">{{item.LanguagesUsed}}</p>
+			<p id="Libraries">{{item.LibrariesUsed}}</p>
 			<i class="fa fa-github"></i>
-			<a href="{{githubLink}}" class="information-p">github</a> 
+			<a href="{{item.githubLink}}" class="information-p">github</a> 
 		</div>
 	</div>
 </div>
