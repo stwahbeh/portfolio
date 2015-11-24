@@ -1,0 +1,41 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+
+body {
+	padding:10px;
+	background-image: url(../svg/wallpaper.svg);	
+	no-repeat center center fixed;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	color:white;
+  		
+}
+
+
+a {
+	color:white;
+}
+
+
+p {
+	color:white;
+}
+
+.fa {
+	height:1.5em;
+    color:white;
+    margin:auto;
+}
+
+a:hover{
+	color:white;
+}
+
+#credits{
+	color:white;
+}
+
+.titles{
+	text-align:center;
+}
