@@ -13,6 +13,15 @@ body {
 }
 
 
+footer {
+    
+    height: 100px;
+    bottom: 0;
+    width: 100%;
+   
+}
+
+
 a {
 	color:white;
 }
@@ -34,8 +43,14 @@ a:hover{
 
 #credits{
 	color:white;
+	font-size:8px;
 }
 
 .titles{
 	text-align:center;
+}
+
+#title {
+	text-align:center;
+	font-size: 10em;
 }

@@ -31,47 +31,37 @@ spotify
 Coming Soon</p>
 
 </div> -->
-<div ng-app="myApp">
+<div ng-app="myApp" ng-controller="myCtrl">
 <div class="container">
   
   <div class="navbar">
-    <ul class="nav navbar-nav" ng-controller="NavCtrl">      
-      <li ng-class="navClass('projects')"><a href='#/projects'>Projects</a></li>
-      <li ng-class="navClass('about-me')"><a href='#/about-me'>About Me</a></li>
-      <li ng-class="navClass('contact-me')"><a href='#/contact-me'>Contact Me</a></li>
+    <ul class="nav navbar-nav" ng-controller="myCtrl">
+    <li ng-class="navClass('home')"><a ui-sref="home" class="btn">Home</a></li>      
+      <li ng-class="navClass('projects')"><a ui-sref="projects" class="btn">Projects</a></li>
+      <li ng-class="navClass('about')"><a ui-sref="interests" class="btn">Interests</a></li>
+      <li ng-class="navClass('contact')"><a href='#contact' class="btn">Contact Me</a></li>
     </ul>
   </div>
 </div>
 
-
-<div class="container" id='header'>
-<!-- <img src="" alt=""> -->
-<!-- This section will contain one image as carousels cheapen the ux and ui--> 
-<layer id="placeholderlayer"></layer><div id="placeholderdiv"></div>
-</div>
-
-<div class="container" id='title'>
-    <p>Hello everyone, welcome to my portfolio! I’m glad you can make it! Here you’ll find out a little bit about who I am and the projects that I’ve done and will be working on.</p>
-</div>
-<div class='container'>
-  <h1 class="titles">About Me</h1>
-</div>
-<div class='container'>
-  <h1 class="titles">Projects</h1>
-</div>
+ <!-- might need to put into a container-->
  <div ui-view></div>
 <!-- Original content is reading in the about page. And then after that depending on what buttons I click I read in different information and show different things. -->
+<footer>
 <div class="container" id ="footer">
-<!-- Here goes the contact information, github, email -->
+
+
 <i class="fa fa-github"></i>
 <a href="https://github.com/stwahbeh" class="information-p">stwahbeh</a> 
 <br>
 <i class="fa fa-envelope-o"></i>
 <a href="mailto:stwahbeh@uw.edu" class="information-p">stwahbeh@uw.edu</a> 
+
 <div id="credits">Icons made by <a href="http://www.flaticon.com/authors/yannick" title="Yannick">Yannick</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div>
 </div>
-</div>
+</footer>
 
+</div>
 
 
 
