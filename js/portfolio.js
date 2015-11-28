@@ -41,7 +41,7 @@ myApp.controller('homeController', function($scope, $http){
 myApp.controller('projectsController', function($scope, $http){
   	
   	var getData = function() {
-	$http.get('../data/info.json').success(function(response){
+	$http.get('/data/info.json').success(function(response){
 	$scope.items = response;
 	
 
