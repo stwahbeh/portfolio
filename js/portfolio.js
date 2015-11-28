@@ -10,7 +10,7 @@ var data;
 myApp.config(function($stateProvider){
 	$stateProvider
 		.state ('home', {
-			url: '',
+			url: '/home',
 			templateUrl: 'template/home.html',
 			controller: 'homeController',
 		})
