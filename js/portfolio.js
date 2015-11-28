@@ -43,11 +43,11 @@ myApp.controller('projectsController', function($scope, $http){
   	var getData = function() {
 	$http.get('../data/info.json').success(function(response){
 	$scope.items = response;
-	console.log(response);
+	
 
 })
 }
-getData()
+getData();
 });
 
 //each page gets its own controller
