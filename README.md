@@ -6,3 +6,6 @@
 3. I spent like 10 hours on this.
 
 4. No problems that weren't solvable by me checking my spelling mistakes.
+
+
+Will be remaking this portfolio in the next couple of weeks. Taking out multipage templating and adding other projects!
